@@ -1,0 +1,12 @@
+{
+  "name": "parPlusPlusApp",
+  "displayName": "parPlusPlusApp",
+  "expo": {
+    "name": "parPlusPlusApp",
+    "slug": "parPlusPlusApp",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
