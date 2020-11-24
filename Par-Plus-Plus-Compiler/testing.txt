@@ -1,0 +1,19 @@
+
+
+Bug Tickets
+• B001: AT IFs: Quadruples were failing at GoTo destination address (FILL method)
+• B002: AT WHILE LOOPS: Quadruples were failing at GoTo destination address (FILL method)
+
+
+Suspicion:
+Equal operator resetting memory.
+
+Functions:
+1) Lo naranja falta (el paso 7 lo implementé pero dejé en comment una parte de reset el varTable porque no sé si se requiere algo más)
+2)  en funciones que solo tienen un solo statement que es de return no me da la dirección de memoria correcta (• Return 1 
+• Return 3.14
+• Return 'f')
+
+3) No funciona llamar a funciones sin argumentos: Ej: cuatro();
+4) No funciona llamar funciones dentro de funciones.  Al llamar funciones dentro de funciones se pierde el scope de la variable iCurrParamMap y por ende no funciona
+

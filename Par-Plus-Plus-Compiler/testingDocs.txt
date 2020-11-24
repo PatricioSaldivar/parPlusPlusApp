@@ -1,0 +1,45 @@
+==========================================================================================
+1) simpleQuadruples.txt
+
+STATUS: Correct Case.
+Run Result:
+
+Map {
+  'Global' => { type: 'void',
+    vars:
+     Map {
+       'i' => 0,
+       'a' => 1,
+       'b' => 2,
+       'c' => 3,
+       'd' => 4,
+       'e' => 5,
+       'f' => 6,
+       'g' => 7,
+       'h' => 8 } } }
+Map {}
+[ Quadruple { operator: '+', iDirOne: 4, iDirTwo: 3, iDirThree: 7000 },
+  Quadruple { operator: '*', iDirOne: 2, iDirTwo: 7000, iDirThree: 7001 },
+  Quadruple { operator: '/', iDirOne: 7001, iDirTwo: 5, iDirThree: 7002 },
+  Quadruple { operator: '+', iDirOne: 1, iDirTwo: 7002, iDirThree: 7003 },
+  Quadruple { operator: '*', iDirOne: 3, iDirTwo: 4, iDirThree: 7004 },
+  Quadruple { operator: '/', iDirOne: 7004, iDirTwo: 8, iDirThree: 7005 },
+  Quadruple { operator: '+', iDirOne: 2, iDirTwo: 7005, iDirThree: 7006 },
+  Quadruple { operator: '-', iDirOne: 7006, iDirTwo: 7, iDirThree: 7007 },
+  Quadruple { operator: '>', iDirOne: 7003, iDirTwo: 7007, iDirThree: 7008 } ]
+
+
+==========================================================================================
+  2) failedTestCases/ifSimple.txt
+
+// Failed at GoToF and GoTo Quadruples.
+// Bug B001 was fixed and now working.
+
+
+
+==========================================================================================
+
+3) correctTestCases/loopQuadruples.txt
+
+// Failed at GoToF and GoTo Quadruples.
+// Bug B002 was fixed and now working.
