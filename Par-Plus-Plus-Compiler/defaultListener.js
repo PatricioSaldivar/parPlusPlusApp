@@ -86,7 +86,7 @@ class DefaultListener extends ParPlusPlusListener {
             maxTemps = 0;
         // Check if function ID already exists
             if(functionTable.has(ctx.ID().getText()) || functionTable.get("Global").vars.has(ctx.ID().getText())){
-                throw Error(`ERROR, ID ${ctx.ID().getText()} already exists ONE ONE`);
+                throw Error(`ERROR, ID ${ctx.ID().getText()} already exists`);
                 return;
             }
             let type = !!ctx.type()? ctx.type().getText() : ctx.VOID().getText();
@@ -268,7 +268,7 @@ class DefaultListener extends ParPlusPlusListener {
     enterXvars(ctx){
         // Check if ID is duplicate
         if(functionTable.get(currentFunction).vars.get(ctx.ID().getText())){
-           throw Error(`ERROR, ID ${ctx.ID().getText()} already exists TWO TWO`);
+           throw Error(`ERROR, ID ${ctx.ID().getText()} already exists`);
             return;            
         }
 

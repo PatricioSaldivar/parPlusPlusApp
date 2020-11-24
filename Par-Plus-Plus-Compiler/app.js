@@ -80,7 +80,14 @@ export function compiler(data){
 
     // Poner llamar la primer regla
     var arbol = parser.program();
-    tree.ParseTreeWalker.DEFAULT.walk(ParPlusListener, arbol);
+    try {
+        tree.ParseTreeWalker.DEFAULT.walk(ParPlusListener, arbol);
+    } catch (error) {
+        console.log('———in compiler ————');
+        console.log(error.toString());
+        console.log('——— 2nd in compiler ————');
+        return error.toString();
+    }
 
     // START Program Execution
     //console.log(DefaultListener.listQuadruples);
