@@ -14,17 +14,11 @@ semanticCubeCtr.getOperandIndex = function(operand)
     else if (operand == 'FLOAT') {
         iIndexOperand = 1;
     }
-    else if (operand == 'DOUBLE') {
-        iIndexOperand = 2;
-    }
-    else if (operand == 'BOOLEAN') {
+    else if (operand == 'CHAR') {
         iIndexOperand = 3;
     }
-    else if (operand == 'CHAR') {
-        iIndexOperand = 4;
-    }
     else if (operand == 'STRING') {
-        iIndexOperand = 5;
+        iIndexOperand = 4;
     }
     else {
         console.log('ERROR: Incompatible Type');

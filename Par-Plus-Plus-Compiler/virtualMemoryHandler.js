@@ -42,6 +42,29 @@ memoryCtr.iLocalCharCount = localCharStartDir;
 memoryCtr.iConstantCount = constMemoryStartDir;
 
 
+memoryCtr.resetAllMemory = function() { 
+    //Initialize TemporalMemoty
+    let iTemporalMemoryList = [];
+    for (var i = memoryCtr.temporalMemoryStartDir; i <= memoryCtr.temporalMemoryEndDir ; i++) {
+        iTemporalMemoryList.push(i);
+    }
+
+
+    // Initialize the global virtual memory. Separate by data types.
+    memoryCtr.iGlobalIntCount = globalIntStartDir;      
+    memoryCtr.iGlobalFloatCount = globalFloatStartDir;    
+    memoryCtr.iGlobalCharCount = globalCharStartDir;
+
+    // Create a local memory and reset it after function execution. Separate by data types.
+    memoryCtr.iLocalIntCount = localIntStartDir;      
+    memoryCtr.iLocalFloatCount = localFloatStartDir;    
+    memoryCtr.iLocalCharCount = localCharStartDir;
+
+    // Create constant memory
+    memoryCtr.iConstantCount = constMemoryStartDir;
+}
+
+
 // Faltan metodos de push y pop
 
 // t1 t2 t3 t4
@@ -164,7 +187,7 @@ memoryCtr.setDirection = function(type, currentScope){
 
 memoryCtr.getType = function(dir){
 
-    if(dir.start){
+    if(dir.sum){
         dir = dir.start;
     }
 

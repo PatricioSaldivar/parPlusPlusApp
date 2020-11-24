@@ -1,0 +1,12 @@
+program Ejemplo; 
+var 
+int i, j, arr[10], n, aux;
+
+main() { 
+   arr[1] = 1;
+   for i = 1 to 9 do
+   {
+      arr[1] = i * arr[1];
+   }
+   write(arr[1]);
+}

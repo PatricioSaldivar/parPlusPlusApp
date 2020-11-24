@@ -1,0 +1,57 @@
+program Ejemplo; 
+var 
+int i, j, p, myLoop; 
+int arreglo[10]; 
+float f, fl; 
+char c; 
+int matriz[3][5]; 
+
+int module uno(int a, int b) 
+var int x, y, z[5][2]; float fFloat;
+{
+    if(a > b) then {
+      return(a + uno(a-1,b));
+    }
+    z[0][0] = 1;
+    z[0][1] = 2;
+    z[1][0] = 3;
+    return (x);
+}
+
+int module factorial(int a)
+var int x;
+{
+    if(a < 2) then {
+        return(1);
+    }else{
+        return(a * factorial(a-1));
+    }
+}
+
+
+
+void module dos(int a)
+var char c;
+{
+    return(c);
+}
+
+char module tres(){
+    return (c);
+}
+
+char module cuatro(char myChar){
+    return (myChar);
+}
+
+main() { 
+    c = 'a';
+    write(tres());
+    dos(2);
+    matriz[2][4] = -uno(5,0);
+    matriz[uno(1,0) * 2][3*3/3-3] = 7;
+    write(matriz[2][4]);
+    write(factorial(factorial(uno(3,2))));
+    j=5; i = 3; c=‘c’;
+    write(i," <-i  j-> ", j ," c-> ",c);
+}

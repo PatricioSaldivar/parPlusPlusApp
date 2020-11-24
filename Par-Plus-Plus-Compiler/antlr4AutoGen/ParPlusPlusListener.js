@@ -236,6 +236,33 @@ ParPlusPlusListener.prototype.exitRead = function(ctx) {
 };
 
 
+// Enter a parse tree produced by ParPlusPlusParser#xread.
+ParPlusPlusListener.prototype.enterXread = function(ctx) {
+};
+
+// Exit a parse tree produced by ParPlusPlusParser#xread.
+ParPlusPlusListener.prototype.exitXread = function(ctx) {
+};
+
+
+// Enter a parse tree produced by ParPlusPlusParser#readvars.
+ParPlusPlusListener.prototype.enterReadvars = function(ctx) {
+};
+
+// Exit a parse tree produced by ParPlusPlusParser#readvars.
+ParPlusPlusListener.prototype.exitReadvars = function(ctx) {
+};
+
+
+// Enter a parse tree produced by ParPlusPlusParser#yread.
+ParPlusPlusListener.prototype.enterYread = function(ctx) {
+};
+
+// Exit a parse tree produced by ParPlusPlusParser#yread.
+ParPlusPlusListener.prototype.exitYread = function(ctx) {
+};
+
+
 // Enter a parse tree produced by ParPlusPlusParser#write.
 ParPlusPlusListener.prototype.enterWrite = function(ctx) {
 };

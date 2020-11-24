@@ -17,15 +17,16 @@ export default function CompilerView() {
   var [outputText, setOutputText] = useState('Resultado');
 
 
-  const clickHandler = async () => {
+  const clickHandler = () => {
     // ParPlusPlusCompiler(stateEntryText) // ).compileAndExecuteProgram(stateEntryText)
       let output = compiler(stateEntryText);
-      console.log('——————— Output —————— ');
+      // console.log('——————— Output —————— ');
       setOutputText(output)
-      console.log(output);
-      console.log('——————— Output END —————— ');
+      // setOutputText('hola')
+      // console.log(output);
+      // console.log('——————— Output END —————— ');
 
-      Alert.alert('Error Alert!', 'error al compi')
+      // Alert.alert('Error Alert!', 'error al compi')
     // setOutputText( compiler(stateEntryText) )
 
   }

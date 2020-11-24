@@ -1,0 +1,38 @@
+program Ejemplo; 
+var 
+int i, j, arr[10], n, aux;
+
+main() { 
+   n = 10;
+   arr[0] = 100;
+   arr[1] = 12;
+   arr[2] = 13;
+   arr[3] = 14;
+   arr[4] = 15;
+   arr[5] = 16;
+   arr[6] = 17;
+   arr[7] = 18;
+   arr[8] = 19;
+   arr[9] = 110;
+
+   for i = 0 to 9 do {
+      for j = 1 to 9-i do
+      { 
+         if (arr[j-1] <= arr[j])  then 
+         {
+            aux = arr[j];
+            arr[j] = arr[j-1];
+            arr[j-1] = aux;
+         }
+      }
+   }
+   for i = 0 to 9 do
+   {
+       if (arr[i] == 100) then
+       {
+           write("ENCONTRADO");
+       }
+      write(arr[i]);
+   }
+
+}
