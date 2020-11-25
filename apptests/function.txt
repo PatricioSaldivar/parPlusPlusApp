@@ -1,0 +1,26 @@
+program Ejemplo; 
+var 
+int i, j, p, myLoop; 
+int arreglo[10]; 
+float f, fl; 
+char c; 
+int matriz[3][5]; 
+
+int module dos() 
+var int x, y; float num;
+{
+    x = 10;
+    return x;
+}
+
+int module uno() 
+var int x, y; float num;
+{
+    return(dos());
+}
+
+
+main() { 
+  j = uno();
+  write(j);
+}
